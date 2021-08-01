@@ -269,7 +269,7 @@ export default function Home() {
         <div className="header-logo">JETOS</div>
         <div className="header-content">
           <div className="left-header-content">
-            <BarsOutlined onClick={() => setActive(true)} />
+            {active && <BarsOutlined onClick={() => setActive(true)} />}
             <div className="search-header">
               <SearchOutlined />
               <Input placeholder="Search keyword" />
