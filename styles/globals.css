@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +13,234 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.wrapper .ant-layout-header {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.header-logo {
+  background-image: linear-gradient(224.41deg, #19C0FF 0%, #008BE0 100%);
+  width: 330px;
+  height: 80px;
+  color: #EFFBFF;
+  font-family: AvenirNext;
+  font-size: 32px;
+  letter-spacing: 2px;
+  line-height: 38px;
+  text-align: left;
+  padding: 18px 126px 18px 40px;
+}
+
+.left-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-header-content .anticon-bars {
+  cursor: pointer;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  width: 1590px;
+  justify-content: space-between;
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.search-header .ant-input {
+  border: none;
+  outline: none;
+  width: 486px;
+  height: 17px;
+  box-shadow: none;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  width: 108px;
+  height: 36px;
+}
+
+.avatar-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.avatar-name {
+  color: #65686F;
+  font-family: AvenirNext;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+}
+
+.avatar-job {
+  color: #19C0FF;
+  font-family: AvenirNext;
+  font-size: 8px;
+  letter-spacing: 0.88px;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+
+.notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-item + .notification-item {
+  margin-left: 1rem;
+}
+
+.wrapper .ant-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper .ant-layout-sider {
+  background-color: white;
+  width: 291.1px !important;
+}
+
+.wrapper .ant-menu-root {
+  width: 291.1px !important;
+}
+
+.wrapper .ant-layout-content {
+  background-color: #F2F4F7;
+  padding: 0 50px;
+}
+
+.btn-new-item {
+  color: black;
+}
+
+.btn-new-item:hover {
+  color: black;
+}
+
+.search-content {
+  width: 370px;
+  height: 40px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  color: #65686F;
+}
+
+.search-content .anticon-search {
+  margin-left: auto;
+}
+  
+.simple-search {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color:#F2F4F7;
+  border: 1px solid #DADADB;
+  border-radius: 3px;
+  height: 40px;
+}
+.simple-search button {
+  padding: 10px 20px;
+  color: #65686F;
+  flex-shrink: 0;
+  border: none;
+  border-top: 1px solid #DADADB;
+  border-bottom: 1px solid #DADADB;
+  height: 40px;
+  background-color: #F2F4F7;
+}
+.simple-search input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  -webkit-appearance: none;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+.simple-search input::placeholder {
+  color: #65686F;
+}
+
+.simple-search input:focus {
+  outline: none;
+}
+
+.wrapper .ant-dropdown-trigger {
+  width: 193px;
+  height: 40px;
+}
+
+.wrapper .ant-layout-content .ant-row {
+  margin-top: 1rem;
+}
+
+.title-content {
+  text-transform: capitalize;
+  font-weight: bold;
+  border-left: 5px solid #19C0FF;
+  line-height: 26px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .header-logo {
+    display: none;
+  }
+
+  .aside-tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    max-width: 300px;
+    z-index: 9999;
+    display: block;
+    bottom: 0;
+    transition: transform 0.25s linear;
+    transform: translateX(-100%);
+  }
+
+  .aside-tab.is-active {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-content {
+    margin-left: 130%;
+  }
 }
